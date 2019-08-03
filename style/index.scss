@@ -1,0 +1,55 @@
+@import "~bootstrap/scss/bootstrap";
+
+header.masthead {
+  background-size: cover !important;
+    position: relative;
+    background-color: #343a40;
+    
+    background: url('/static/bg-masthead.jpg');
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    .overlay {
+      position: absolute;
+      background-color: #212529;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    @media (min-width: 768px) {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    .features-icons-item {
+      max-width: 20rem;
+      .features-icons-icon {
+        color: #ec3e3e;
+        justify-content: center;
+        height: 7rem;
+        svg {
+          font-size: 4.5rem;
+        }
+      }
+      &:hover {
+        .features-icons-icon {
+          svg {
+            font-size: 5rem;
+            cursor: pointer;
+            animation-duration: 0.5
+          }
+        }
+      }
+    }
+  }

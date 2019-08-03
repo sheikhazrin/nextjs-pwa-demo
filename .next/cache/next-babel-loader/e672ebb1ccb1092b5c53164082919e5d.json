@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from 'react';\nimport App, { Container } from 'next/app';\n\nclass MyApp extends App {\n  render() {\n    const {\n      Component,\n      pageProps\n    } = this.props;\n    return React.createElement(Container, null, React.createElement(Component, pageProps));\n  }\n\n}\n\nexport default MyApp;","map":null,"metadata":{},"sourceType":"module"}

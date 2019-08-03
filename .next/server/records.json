@@ -1,0 +1,57 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/_app.js": 0,
+      "multi private-next-pages/_document.js": 1,
+      "multi private-next-pages/courses.js": 2,
+      "multi private-next-pages/courses/[course].js": 3,
+      "multi private-next-pages/index.js": 4,
+      "multi next/dist/pages/_error": 5
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/_app.js": 0,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/_document.js": 1,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/_error.js": 2,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/courses.js": 3,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/courses/[course].js": 4,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/index.js": 5,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/_app.js": 6,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/_document.js": 7,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/_error.js": 8,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/courses.js": 9,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/courses/[course].js": 10,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/index.js": 11,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/_app.js": 0,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/_document.js": 1,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/_error.js": 2,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/courses.js": 3,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/courses/[course].js": 4,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/index.js": 5,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/_app.js": 6,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/_document.js": 7,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/_error.js": 8,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/courses.js": 9,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/courses/[course].js": 10,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/index.js": 11
+    },
+    "bySource": {},
+    "usedIds": [
+      10,
+      11,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

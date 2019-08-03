@@ -1,0 +1,67 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!node_modules/sass-loader/lib/loader.js??ref--5-2!style/index.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/css-loader/index.js??ref--5-1!node_modules/sass-loader/lib/loader.js??ref--5-2!style/index.scss 0": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/_app.js": 2,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/_error.js": 3,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/courses.js": 4,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/courses/[course].js": 5,
+      "static/ZHVMmKIp69SbyP8VK1b-F/pages/index.js": 6,
+      "static/runtime/main.js": 7,
+      "styles": 8,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/_app.js": 9,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/_error.js": 10,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/courses.js": 11,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/courses/[course].js": 12,
+      "static/PtzI4MjIrCLHHaVRlqKqd/pages/index.js": 13,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/_app.js": 2,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/_error.js": 3,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/courses.js": 4,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/courses/[course].js": 5,
+      "static/wlcSO0-wYYFejaIHnD62z/pages/index.js": 6,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/_app.js": 9,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/_error.js": 10,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/courses.js": 11,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/courses/[course].js": 12,
+      "static/d99OuJIVhRlu3BEfvCp3A/pages/index.js": 13
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13,
+      7,
+      8,
+      9
+    ]
+  }
+}
