@@ -1,39 +1,24 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_92fa9139568d8c3d8f78.js",
+    "static/development/dll/dll_92fa9139568d8c3d8f78.js.map"
+  ],
   "pages": {
-    "/": [
-      "static/runtime/webpack-f5e50b6b501ccea2a79b.js",
-      "static/chunks/commons.6fdd34bb75fb3a039262.js",
-      "static/css/styles.87da5e46.chunk.css",
-      "static/chunks/styles.e23fa9d156562bc866d2.js",
-      "static/runtime/main-635ff2e09a94bf14329b.js"
-    ],
     "/_app": [
-      "static/runtime/webpack-f5e50b6b501ccea2a79b.js",
-      "static/chunks/commons.6fdd34bb75fb3a039262.js",
-      "static/runtime/main-635ff2e09a94bf14329b.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-f5e50b6b501ccea2a79b.js",
-      "static/chunks/commons.6fdd34bb75fb3a039262.js",
-      "static/runtime/main-635ff2e09a94bf14329b.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
-    "/courses": [
-      "static/runtime/webpack-f5e50b6b501ccea2a79b.js",
-      "static/chunks/commons.6fdd34bb75fb3a039262.js",
-      "static/runtime/main-635ff2e09a94bf14329b.js"
+    "/dashboard": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
-    "/courses/[course]": [
-      "static/runtime/webpack-f5e50b6b501ccea2a79b.js",
-      "static/chunks/commons.6fdd34bb75fb3a039262.js",
-      "static/runtime/main-635ff2e09a94bf14329b.js"
-    ],
-    "/index": [
-      "static/runtime/webpack-f5e50b6b501ccea2a79b.js",
-      "static/chunks/commons.6fdd34bb75fb3a039262.js",
-      "static/css/styles.87da5e46.chunk.css",
-      "static/chunks/styles.e23fa9d156562bc866d2.js",
-      "static/runtime/main-635ff2e09a94bf14329b.js"
+    "/login": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

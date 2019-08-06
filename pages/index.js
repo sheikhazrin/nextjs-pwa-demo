@@ -29,6 +29,14 @@ class Homepage extends React.Component {
                 <Head>
                     <title>Udemy constructor</title>
                 </Head>
+                <nav className="navbar navbar-light bg-light static-top">
+                    <div className="container">
+                    <a className="navbar-brand" href="#">Udemy constructor</a>
+                        <Link href={`/login`} as={`/login`}>
+                            <a className="btn btn-primary" href="#">Sign In</a>
+                        </Link>
+                    </div>
+                </nav>
                 <header className="masthead text-white text-center">
                     <div className="overlay"></div>
                     <div className="container">
