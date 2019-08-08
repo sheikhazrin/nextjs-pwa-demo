@@ -8,35 +8,39 @@ import {
     faFileContract,
     faPhotoVideo,
 } from '@fortawesome/free-solid-svg-icons'
+import { authInitialProps } from '../lib/auth'
+import Layout from '../components/Layout'
 
 class Homepage extends React.Component {
-
-  componentDidMount() {
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register('/service-worker.js')
-        .then(registration => {
-          console.log("Service worker is running success", registration)
-        })
-        .catch(err => {
-          console.warn('Service worker is running fail', err)
-        })
+    componentDidMount() {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/service-worker.js')
+                .then(registration => {
+                    console.log(
+                        'Service worker is running success',
+                        registration
+                    )
+                })
+                .catch(err => {
+                    console.warn('Service worker is running fail', err)
+                })
+        }
     }
-  }
     render() {
         return (
-            <React.Fragment>
+            <Layout {...this.props}>
                 <Head>
                     <title>Udemy constructor</title>
                 </Head>
-                <nav className="navbar navbar-light bg-light static-top">
+                {/* <nav className="navbar navbar-light bg-light static-top">
                     <div className="container">
                     <a className="navbar-brand" href="#">Udemy constructor</a>
                         <Link href={`/login`} as={`/login`}>
                             <a className="btn btn-primary" href="#">Sign In</a>
                         </Link>
                     </div>
-                </nav>
+                </nav> */}
                 <header className="masthead text-white text-center">
                     <div className="overlay"></div>
                     <div className="container">
@@ -77,17 +81,22 @@ class Homepage extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4">
-                                      <Link href={`/courses?page=1`} as={`/courses?page=1`}>
-                                <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                                    <div className="features-icons-icon d-flex">
-                                          <FontAwesomeIcon icon={faPhotoVideo} />
+                                <Link
+                                    href={`/courses?page=1`}
+                                    as={`/courses?page=1`}
+                                >
+                                    <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                                        <div className="features-icons-icon d-flex">
+                                            <FontAwesomeIcon
+                                                icon={faPhotoVideo}
+                                            />
+                                        </div>
+                                        <h3>100,000 Top rated movie</h3>
+                                        <p className="lead mb-0">
+                                            Get the top rated movies on TMDb
+                                        </p>
                                     </div>
-                                    <h3>100,000 Top rated movie</h3>
-                                    <p className="lead mb-0">
-                                    Get the top rated movies on TMDb
-                                    </p>
-                                </div>
-                                      </Link>
+                                </Link>
                             </div>
                             <div className="col-lg-4">
                                 <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
@@ -116,9 +125,11 @@ class Homepage extends React.Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </Layout>
         )
     }
 }
+
+Homepage.getInitialProps = authInitialProps()
 
 export default Homepage

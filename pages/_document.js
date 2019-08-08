@@ -1,11 +1,16 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { getServerSideToken, getUserScript } from '../lib/auth';
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
         const initialProps = await Document.getInitialProps(ctx)
-        return { ...initialProps }
+
+        const userData = await getServerSideToken(ctx.req)
+
+        return { ...initialProps, ...userData }
       }
     render() {
+        const { user = {} } = this.props;
         return (
             <Html>
                 <Head>
@@ -54,6 +59,7 @@ export default class MyDocument extends Document {
                 </Head>
                 <body>
                     <Main />
+                    <script dangerouslySetInnerHTML={{__html: getUserScript(user)}} />
                     <NextScript />
                 </body>
             </Html>

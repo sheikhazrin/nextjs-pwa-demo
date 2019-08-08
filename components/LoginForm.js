@@ -6,6 +6,7 @@ class LoginForm extends React.Component {
     state = {
         email: 'Sincere@april.biz',
         password: 'hildegard.org',
+        error: '',
     }
 
     handleChange = e => {
@@ -14,17 +15,34 @@ class LoginForm extends React.Component {
         })
     }
 
-    handleSubmit = e => {
+    handleSubmit = async e => {
         e.preventDefault()
         const { email, password } = this.state
-        loginUser({ email, password }).then(() => Router.push('/dashboard'))
+        this.setState({
+            error: '',
+        })
+        
+        const resp = await loginUser({ email, password })
+
+        if(resp.err_code === 0) {
+            Router.push('/dashboard')
+        } else {
+            this.showError(resp.message)
+        }
+    }
+
+    showError = err => {
+        this.setState({
+            error: err,
+        })
     }
 
     render() {
-        const { email, password } = this.state;
+        const { email, password, error } = this.state
 
         return (
-            <form onSubmit={this.handleSubmit}>
+            <React.Fragment>
+                <form onSubmit={this.handleSubmit}>
                 <div>
                     <input
                         type="email"
@@ -44,7 +62,25 @@ class LoginForm extends React.Component {
                     />
                 </div>
                 <button type="submit">Login</button>
+                {error && <div>err: {error}</div>}
             </form>
+            <style jsx>{`
+                form div {
+                    margin: 5px;
+                }
+                form input {
+                    width: 200px
+                }
+                form button {
+                    background: #ec3e3e;
+                    color: white;
+                    border: none;
+                    padding: 8px;
+                    cursor: pointer;
+                    margin: 5px;
+                }
+            `}</style>
+            </React.Fragment>
         )
     }
 }

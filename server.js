@@ -30,12 +30,9 @@ app.prepare().then(() => {
     const server = express()
     server.use(express.json())
     server.use(cookieParser(COOKIE_SECRET));
-
-    
     server.get('/login', (req, res) => {
         return app.render(req, res, '/login')
     })
-
 
     server.post('/api/login', async (req, res) => {
         const { email, password } = req.body
@@ -91,6 +88,8 @@ app.prepare().then(() => {
             handle(req, res, parseUrl)
         }
     })
+
+
     server.listen(port, () => {
         console.log(`Listening on port: ${port}`)
     })
