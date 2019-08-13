@@ -77,6 +77,11 @@ app.prepare().then(() => {
         }
     })
 
+    server.post('/api/logout', (req, res) => {
+        res.clearCookie('token', COOKIE_OPTIONS);
+        res.sendStatus(204);
+    })
+
     server.get('*', (req, res) => {
         const parseUrl = url.parse(req.url, true)
         const { pathname } = parseUrl
